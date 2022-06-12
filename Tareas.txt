@@ -1,0 +1,36 @@
+- Para los sitios ALAJUELA, tendrán un único servidor de DHCP conectado en el switch 
+de GARITA.
+
+- Para los sitios URUCA Y TIBAS, tendrán un único servidor de DCHP Server 
+conectado al switch de la URUCA.
+
+- Para los sitios de Heredia, el Router deberá funcionar como servidor de DHCP, 
+esto para ambos switches.
+
+- Toda la red debe tener comunicación entre sí, esto se debe realizar utilizando el 
+protocolo de enrutamiento OSPF área 0, así como VLSM, VLANS, TRUNK y lo que sea necesario.
+
+- Se debe de configurar en la red de Alajuela un servidor WEB, donde muestre su página web,
+modificada por cada uno de ustedes, donde aparezca una pequeña portada del problema.
+
+- Para el caso del router de la Uruca, deben configurar el servidor de correo interno 
+para 3 usuarios.
+
+Access list: 
+-> Tibas no puede ver Garita Server
+-> Coyol no pueder ver Uruca Server
+
+- Deben crear una lista de acceso extendida para restringir el tráfico de los usuarios de Tibás 
+en San José hacia el servidor Web instalado en Alajuela (Garita), los usuarios de la Uruca si deben
+tener acceso al servidor WEB.
+
+- Desde la red de Coyol no se debe tener acceso al servidor FTP instalado en la red de la Uruca,
+esto mediante una acces list.
+
+- Además se debe de configurar una Vlan extra por cada sitio que será la VLAN de Voz,
+ para la asignación de esta red, deben tomar una de las direcciones sobrantes y 
+ajustarla a la cantidad de equipos por red, según se indica, así mismos las extensiones 
+para los Ip Phone son las siguientes: 
+Garita 100-105, Coyol 200-205, San Rafael 300-305,
+ San Joaquín 400-405, Uruca 500-505, Tibás 600-605. Para este caso se puede simular con 
+dos Ip phones por Sitio.
